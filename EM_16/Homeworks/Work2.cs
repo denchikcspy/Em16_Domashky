@@ -59,7 +59,7 @@ namespace EM_16.Homeworks
             
                 int index = 0;
                 Console.WriteLine("\nЗгенерований масив:");
-                for (int i = 0; i < Length2; i++)
+                for (int i = 0; i < array2.Length; i++)
                 {
                     array2[i] = random2.Next(min, max+1);
                     Console.Write($"{array2[i]}\t");
@@ -206,12 +206,13 @@ namespace EM_16.Homeworks
             }
             
            //5
-           Console.WriteLine("5 завдання");
+           Console.WriteLine("\nЗавдання 5\n");
             int[] array5 = new int[20];
             Random random5 = new Random();
             for (int i = 0; i < array5.Length; i++)
             {
                 array5[i] = random5.Next(10, 100);
+                Console.Write($"{array5[i]}\t");
             }
 
             int maxSum = 0;
