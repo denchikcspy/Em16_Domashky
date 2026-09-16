@@ -11,7 +11,7 @@ namespace EM16
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            Work1.Run();
+            Work2.Run2();
         }
     }
 }
