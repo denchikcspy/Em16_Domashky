@@ -8,8 +8,6 @@ namespace EM_16.Homeworks
     internal class Work1
     {
 
-        
-
         public static void Run()
         {
             // 1
@@ -18,7 +16,7 @@ namespace EM_16.Homeworks
 
             double steps = Getters.GetDouble("Вкажи кількість кроків, які ти пройшов");
 
-            if (!Validation.IsPositive(goal) ||!Validation.IsPositive(steps))
+            if (!Validation.IsPositive(goal) || !Validation.IsPositive(steps))
             {
                 Console.WriteLine("\nЦіль або пройденні кроки не можуть бути від'ємними або нулем");
                 return;
