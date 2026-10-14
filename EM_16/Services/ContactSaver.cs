@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EM_16.Helpers
+namespace EM_16.Services
 {
     class ContactSaver
     {

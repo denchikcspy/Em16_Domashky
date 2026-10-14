@@ -49,7 +49,7 @@ namespace EM_16.Helpers
                 return value.Trim();
             }
 
-            public static string GetPhone(string message)
+            public static string GetStringNum(string message)
             {
                 Console.WriteLine("\n" + message);
 
@@ -57,7 +57,7 @@ namespace EM_16.Helpers
 
                 while (string.IsNullOrWhiteSpace(value))
                 {
-                    Console.WriteLine("\nНомер телефону не може бути порожнім.\nВведіть номер телефону:");
+                    Console.WriteLine("\nВведено порожній рядок.\nВведіть знову:");
                     value = Console.ReadLine();
                 }
 

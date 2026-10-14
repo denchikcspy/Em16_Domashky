@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using EM_16.Entities;
 using EM_16.Helpers;
+using EM_16.Services;
 
 namespace EM_16.Homeworks
 {
@@ -80,7 +82,7 @@ namespace EM_16.Homeworks
         static void CreateContact(ContactSaver2 contactSaver)
         {
             string name = Getters.GetString("Введіть ім'я:");
-            string phone = Getters.GetPhone("Введіть номер телефону:");
+            string phone = Getters.GetStringNum("Введіть номер телефону:");
             string address = Getters.GetString("Введіть адресу:");
 
             contactSaver.Create(name, phone, address);
@@ -108,7 +110,7 @@ namespace EM_16.Homeworks
             }
             else if (choice == 2)
             {
-                string newPhone = Getters.GetPhone("Введіть новий номер телефону:");
+                string newPhone = Getters.GetStringNum("Введіть новий номер телефону:");
 
                 contactSaver.UpdateById(id, "", newPhone);
             }
@@ -141,7 +143,7 @@ namespace EM_16.Homeworks
             }
             else if (choice == 2)
             {
-                string newPhone = Getters.GetPhone("Введіть новий номер телефону:");
+                string newPhone = Getters.GetStringNum("Введіть новий номер телефону:");
 
                 contactSaver.UpdateByName(name, "", newPhone);
             }

@@ -1,4 +1,4 @@
-﻿namespace EM_16.Helpers
+﻿namespace EM_16.Entities
 {
     class Contact
     {

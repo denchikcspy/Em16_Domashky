@@ -7,6 +7,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Linq;
 using EM_16.Helpers;
+using EM_16.Services;
 
 namespace EM_16.Homeworks
 {
@@ -55,7 +56,7 @@ namespace EM_16.Homeworks
                         case 1:
                             {
                                 string name = Getters.GetString("Введіть ім'я:");
-                                string phone = Getters.GetPhone("Введіть номер телефону:");
+                                string phone = Getters.GetStringNum("Введіть номер телефону:");
 
                                 contactSaver.Create(name, phone);
 
@@ -85,7 +86,7 @@ namespace EM_16.Homeworks
                                 }
                                 else if (updateChoice == 2)
                                 {
-                                    string newPhone = Getters.GetPhone("Введіть новий номер телефону:");
+                                    string newPhone = Getters.GetStringNum("Введіть новий номер телефону:");
 
                                     contactSaver.Update(oldName, "", newPhone);
 

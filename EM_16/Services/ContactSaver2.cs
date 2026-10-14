@@ -1,7 +1,8 @@
-﻿using System;
+﻿using EM_16.Entities;
+using System;
 using System.Collections.Generic;
 
-namespace EM_16.Helpers
+namespace EM_16.Services
 {
     class ContactSaver2
     {
